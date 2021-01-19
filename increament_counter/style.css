@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  background-color: rgb(175, 5, 175);
+}
+
+/* counter style */
+.counter-container {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
+  padding: 20px;
+  text-align: center;
+}
+
+.counter {
+  font-size: 30px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* media query for small screen */
+@media (max-width: 580px) {
+  body {
+    flex-direction: column;
+  }
+}
